@@ -25,7 +25,7 @@ jobs:
           python -m nuitka --standalone --onefile client.py
 
       - name: Upload EXE artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: client-exe
           path: client.exe
