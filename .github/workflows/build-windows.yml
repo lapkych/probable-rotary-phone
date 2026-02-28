@@ -19,8 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install nuitka
-
+          pip install nuitka requests chardet urllib3
       - name: Build EXE
         run: |
           python -m nuitka --standalone --onefile client.py
