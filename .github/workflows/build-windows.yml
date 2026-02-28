@@ -14,7 +14,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10  # точная версия, реально существующая на runner
+          python-version: 3.10.12  # точная версия, реально существующая на runner 
 
       - name: Upgrade pip and install dependencies
         run: |
